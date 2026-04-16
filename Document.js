@@ -22,6 +22,15 @@ class Document {
 
     }
 
+
+    /*
+    ============
+    Les méthodes d'accès GETTERS
+    ============
+    */
+
+
+
     // je vais créer les méthodes getTitre et getAuteur pour accéder aux propriétés titre et auteur de ma classe Document.
     getTitre() {
         // la méthode getTitre retourne la valeur de la propriété titre de ma classe Document.
@@ -44,6 +53,44 @@ class Document {
         // la méthode getNombrePage retourne la valeur de la propriété nombrePage de ma classe Document.
         return this.nombrePage;
     }
+
+    /*
+    ============
+    Les méthodes de modification SETTERS
+    ============
+    *Les méthodes setters permettent de modifier les propriétés d'une classe.
+    */
+
+    setTitre(nouveauTitre) {
+        // avant de modifier le titre du document, j'affiche le titre actuel du document.
+        console.log("**Je modifie le titre du document1 : " , this.titre);
+
+        // la méthode setTitre modifie la valeur de la propriété titre de ma classe Document.
+        this.titre = nouveauTitre;
+        console.log("**Le nouveau titre du document est : " , this.titre);
+
+    }
+
+
+    // je vais créer la méthode setAuteur pour modifier la propriété auteur de ma classe Document.
+    setAuteur(nouveauAuteur) {
+        // avant de modifier l'auteur du document, j'affiche l'auteur actuel du document.
+        console.log("**Je modifie l'auteur du document1 : " , this.auteur);
+        // la méthode setAuteur modifie la valeur de la propriété auteur de ma classe Document.
+        this.auteur = nouveauAuteur;
+        console.log("**Le nouvel auteur du document est : " , this.auteur);
+    }
+
+
+    // je vais créer la méthode setNombrePage pour modifier la propriété nombrePage de ma classe Document.
+    setNombrePage(nouveauNombrePage) {
+        // avant de modifier le nombre de pages du document, j'affiche le nombre de pages actuel du document.
+        console.log("**Je modifie le nombre de pages du document1 : " , this.nombrePage);
+        // la méthode setNombrePage modifie la valeur de la propriété nombrePage de ma classe Document.
+        this.nombrePage = nouveauNombrePage;
+        console.log("**Le nouveau nombre de pages du document est : " , this.nombrePage);
+    }
+
 }
 
 
@@ -74,6 +121,19 @@ console.log(" auteurDocumentCss: ", auteurDocumentCss);
 
 let nombrePageDocumentCss = documentCss.getNombrePage();
 console.log(" nombrePageDocumentCss: ", nombrePageDocumentCss);
+
+
+//je fais appel à mon objet document1 et je modifie le titre du document1 en utilisant la méthode setTitre.
+document1.setTitre("Bao vas a Sada 2");
+
+//je fais appel à mon objet document1 et je modifie l'auteur du document1 en utilisant la méthode setAuteur.
+document1.setAuteur("Sada 2");
+
+
+//je fais appel à mon objet document1 et je modifie le nombre de pages du document1 en utilisant la méthode setNombrePage.
+document1.setNombrePage(20);
+
+
 
 /*
 ============
